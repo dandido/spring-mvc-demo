@@ -1,13 +1,26 @@
 package com.spring.demo.StudentData;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 
 	private String lastName;
 	private String firstName;
 	private String country;
 	
-	public Student() {
 	
+	private String countryoptimized;
+	
+	private LinkedHashMap<String, String> countryOptions;
+	
+	
+	public Student() {
+		countryOptions = new LinkedHashMap<>();
+		countryOptions.put("TN", "Tunisia");
+		countryOptions.put("US", "United States");
+		countryOptions.put("FR", "France");
+		countryOptions.put("AU", "Austalia");
+
 	}
 	public String getLastName() {
 		return lastName;
@@ -27,8 +40,15 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-
-	
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+	public String getCountryoptimized() {
+		return countryoptimized;
+	}
+	public void setCountryoptimized(String countryoptimized) {
+		this.countryoptimized = countryoptimized;
+	}
 	
 	
 }

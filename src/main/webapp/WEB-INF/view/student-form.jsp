@@ -25,6 +25,13 @@
 	<form:option value="Silver City" label ="Silver City"></form:option>
 
 	</form:select>
+	
+	countryoptimized : 
+	<form:select path="countryoptimized">
+		<form:options items="${student.countryOptions}"/>
+	</form:select>
+		
+	
 	<br><br>
 	<input type="submit" value="Submit">
 	
