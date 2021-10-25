@@ -17,6 +17,15 @@
 	Last name : <form:input path="lastName" />
 	<br><br>
 	
+	Country : 
+	<form:select path="country">
+	<form:option value="Hell Gate" label ="Hell Gate"></form:option>
+	<form:option value="France" label ="France"></form:option>
+	<form:option value="Tunisia" label ="Tunisia"></form:option>
+	<form:option value="Silver City" label ="Silver City"></form:option>
+
+	</form:select>
+	<br><br>
 	<input type="submit" value="Submit">
 	
 </form:form>
