@@ -8,6 +8,7 @@
 <hr>
 <!-- parent contoller/nameofthe controller -->
 <a href="Form/showForm"> Hello World Form </a>
-
+<br> <br>
+<a href="student/showForm"> Student registration form </a>
 
 </html>
